@@ -1,4 +1,49 @@
-python -m uvicorn main:app --reload
+PROOF OF CONCEPT - Implementacja demonstracyjna
+
+W repozytorium znajduje się uproszczona implementacja backendu w FastAPI, która demonstruje kluczowe elementy systemu:
+
+obsługę endpointu /message,
+
+wykorzystanie modelu LLM do ekstrakcji danych zgłoszenia,
+
+zarządzanie stanem rozmowy (conversation_state) w pamięci aplikacji,
+
+zapis kompletnych zgłoszeń do bazy SQLite,
+
+walidację kompletności danych przed zapisem,
+
+endpoint /tickets do podglądu zapisanych zgłoszeń.
+
+Wersja ta ma charakter demonstracyjny (Proof of Concept) i nie implementuje pełnej architektury produkcyjnej (np. brak Redis, brak asynchronicznej obsługi audio, brak realnej integracji z telefonią).
+
+Celem implementacji jest pokazanie sposobu myślenia o:
+
+ekstrakcji danych przy użyciu AI,
+
+separacji logiki biznesowej od warstwy komunikacyjnej,
+
+minimalizacji ryzyka zapisu niekompletnych zgłoszeń,
+
+dynamicznym uzupełnianiu brakujących danych.
+
+URUCHAMIANIE PROJEKTU
+
+--------------Wymagania--------------
+- Python 3.11 (zalecana wersja ze względu na stabilność zależności)
+- Ustawiona zmienna środowiskowa
+    OPENAI_API_KEY
+
+--------------Instalacja--------------
+-Utworzenie środowiska wirtualnego 
+    python -m venv venv
+-Aktywacja
+    venv\Scripts\activate
+-Instalacja zależności
+    pip install fastapi uvicorn openai
+-Uruchamianie serwera
+    python -m uvicorn main:app --reload
+-Api dostępne pod :
+    http://127.0.0.1:8000/docs
 
 
 # AI Call Center Agent – Propozycja Architektury Systemu
