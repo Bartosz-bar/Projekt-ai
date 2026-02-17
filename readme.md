@@ -33,7 +33,8 @@ URUCHAMIANIE PROJEKTU
 - Ustawiona zmienna środowiskowa
     OPENAI_API_KEY
 
---------------Instalacja--------------
+--------------Instalacja-------------- 
+
 -Utworzenie środowiska wirtualnego 
     python -m venv venv
 -Aktywacja
