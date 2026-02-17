@@ -29,21 +29,22 @@ dynamicznym uzupełnianiu brakujących danych.
 URUCHAMIANIE PROJEKTU
 
 --------------Wymagania--------------
+
 - Python 3.11 (zalecana wersja ze względu na stabilność zależności)
 - Ustawiona zmienna środowiskowa
     OPENAI_API_KEY
 
 --------------Instalacja-------------- 
 
--Utworzenie środowiska wirtualnego 
+- Utworzenie środowiska wirtualnego 
     python -m venv venv
--Aktywacja
+- Aktywacja
     venv\Scripts\activate
--Instalacja zależności
+- Instalacja zależności
     pip install fastapi uvicorn openai
--Uruchamianie serwera
+- Uruchamianie serwera
     python -m uvicorn main:app --reload
--Api dostępne pod :
+- Api dostępne pod :
     http://127.0.0.1:8000/docs
 
 
