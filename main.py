@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from openai import OpenAI
 
 # Pobieramy klucz bezpiecznie
-client = OpenAI(api_key=os.getenv("apk"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 app = FastAPI()
 
@@ -24,7 +24,7 @@ def init_db():
             conversation_id TEXT,
             intent TEXT,
             address TEXT,
-            phone TEXT esesese
+            phone TEXT
         )
     """)
 
