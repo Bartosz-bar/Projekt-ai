@@ -32,8 +32,9 @@ URUCHAMIANIE PROJEKTU
 
 - Python 3.11 (zalecana wersja ze względu na stabilność zależności)
 - Ustawiona zmienna środowiskowa
-    OPENAI_API_KEY
-    set OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxx
+    OPENAI_API_KEY --
+    set OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+
 
 
 --------------Instalacja-------------- 
