@@ -28,7 +28,7 @@ dynamicznym uzupełnianiu brakujących danych.
 
 URUCHAMIANIE PROJEKTU
 
---------------Wymagania--------------
+--------------Wymagania-------------- 
 
 - Python 3.11 (zalecana wersja ze względu na stabilność zależności)
 - Ustawiona zmienna środowiskowa
